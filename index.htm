@@ -17,31 +17,11 @@
 
     <script type="text/babel">
 
-        let LoginZoidReactComponent = LoginZoidComponent.driver('react', {
-            React: window.React,
-            ReactDOM: window.ReactDOM
-        });
-
         function App() {
-            const [ loggedIn, setLoggedIn ] = React.useState(false);
-            const [ email, setEmail ] = React.useState('foo@bar.com');
-
-            let onLogin = (email) => {
-                setEmail(email);
-                setLoggedIn(true);
-            }
-
             return (
-                <div>
-                    <h3>Log in on xyz.com</h3>
-
-                    { loggedIn
-                        ? <p>User logged in with email: { email }</p>
-                        : <LoginZoidReactComponent
-                            prefilledEmail={ email }
-                            onLogin={ onLogin } />
-                    }
-                </div>
+                <>
+                <h1>hello</h1>
+                </>
             );
         }
 
